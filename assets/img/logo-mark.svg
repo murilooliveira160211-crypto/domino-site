@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 28" width="48" height="28" role="img"><title>Dominópolis</title><defs>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity=".22"/></filter>
+  <filter id="shLg" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0F172A" flood-opacity=".22"/></filter>
+  <filter id="shLift" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#0F172A" flood-opacity=".25"/></filter>
+  <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E2AE7C"/><stop offset=".55" stop-color="#C68B59"/><stop offset="1" stop-color="#A86F40"/></linearGradient>
+  <linearGradient id="woodBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A86F40"/><stop offset="1" stop-color="#7A4C29"/></linearGradient>
+</defs><g transform="translate(0 0.08) scale(1)">
+    <rect x="1" y="1" width="46" height="26" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+    <rect x="4.5" y="4.5" width="18.5" height="19" rx="3" fill="#16A34A"/>
+    <circle cx="10.5" cy="11" r="3" fill="#86EFAC"/><circle cx="16.5" cy="17" r="3" fill="#86EFAC"/>
+    <rect x="25" y="4.5" width="18.5" height="19" rx="3" fill="#475569"/>
+    <line x1="25" y1="14" x2="43.5" y2="14" stroke="#F97316" stroke-width="2.4" stroke-dasharray="3.6 2.6"/>
+  </g></svg>

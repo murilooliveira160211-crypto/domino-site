@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominópolis — o dominó clássico, reinventado em uma cidade viva</title>
+  <meta name="description" content="Dominópolis: conecte ruas, parques e prédios, cerque quarteirões para descartar peças e seja o primeiro a bater. 2 a 4 jogadores, 15 a 20 min, 8+ anos. 5% de desconto no Pix.">
+  <meta name="theme-color" content="#F8FAFC">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Dominópolis — o dominó clássico, reinventado em uma cidade viva">
+  <meta property="og:description" content="Conecte ruas, parques e prédios e seja o primeiro a bater. 2 a 4 jogadores • 15 a 20 min • 8+ anos.">
+  <!-- TODO: og:image precisa ser PNG/JPG 1200x630 com URL absoluta (WhatsApp/Facebook não exibem SVG). -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/cidade.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============================== CABEÇALHO ============================== -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="#topo" class="logo" aria-label="Dominópolis — voltar ao topo">
+        <svg class="logo-mark" viewBox="0 0 48 28" aria-hidden="true">
+          <rect x="1" y="1" width="46" height="26" rx="6" fill="#1E293B"/>
+          <rect x="4.5" y="4.5" width="18.5" height="19" rx="3" fill="#16A34A"/>
+          <circle cx="10.5" cy="11" r="3" fill="#86EFAC"/>
+          <circle cx="16.5" cy="17" r="3" fill="#86EFAC"/>
+          <rect x="25" y="4.5" width="18.5" height="19" rx="3" fill="#475569"/>
+          <line x1="25" y1="14" x2="43.5" y2="14" stroke="#F97316" stroke-width="2.4" stroke-dasharray="3.6 2.6"/>
+        </svg>
+        <span class="logo-text">DOMINÓPOLIS</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Seções da página" data-nav>
+        <ul>
+          <li><a href="#como-jogar">Como Jogar</a></li>
+          <li><a href="#na-caixa">O que vem na caixa</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" type="button" data-open-cart aria-controls="carrinho" aria-label="Abrir carrinho (0 itens)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-tag">
+            <span class="tag-new">Lançamento</span>
+            <span class="tag-facts">
+              <span class="tag-sep tag-sep-lead" aria-hidden="true">•</span> 2 a 4 jogadores
+              <span class="tag-sep" aria-hidden="true">•</span> 15 a 20 min
+              <span class="tag-sep" aria-hidden="true">•</span> 8+ anos
+            </span>
+          </p>
+          <h1 id="hero-title">O dominó clássico, reinventado em uma <span class="hl">cidade viva</span>.</h1>
+          <p class="hero-sub">Conecte ruas, parques e prédios, cerque quarteirões para descartar peças extras e seja o primeiro a bater.</p>
+        </div>
+
+        <!-- Vitrine -->
+        <div class="hero-gallery">
+          <div class="gallery" data-gallery>
+            <div class="gallery-stage" data-gallery-stage>
+              <img class="gallery-img" data-gallery-img src="assets/img/cidade.svg" width="600" height="600"
+                   alt="Cidade montada no Tabuleiro-Moldura 8x8, com ruas, parques, prédios, uma ponte e a Praça Central">
+              <p class="gallery-caption" data-gallery-caption>Cidade montada no Tabuleiro-Moldura 8x8</p>
+              <button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Imagem anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Próxima imagem">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <span class="gallery-counter" data-gallery-counter aria-hidden="true">1 / 6</span>
+            </div>
+            <div class="gallery-thumbs" role="group" aria-label="Escolha uma imagem do jogo">
+              <button class="thumb is-active" type="button" aria-pressed="true"
+                      data-src="assets/img/cidade.svg"
+                      data-alt="Cidade montada no Tabuleiro-Moldura 8x8, com ruas, parques, prédios, uma ponte e a Praça Central"
+                      data-caption="Cidade montada no Tabuleiro-Moldura 8x8">
+                <img src="assets/img/cidade.svg" alt="" width="72" height="72"><span>Cidade</span>
+              </button>
+              <button class="thumb" type="button" aria-pressed="false"
+                      data-src="assets/img/pecas-rua.svg"
+                      data-alt="Peças de Rua: retas, cruzamentos, curvas e combinações com parque e prédio"
+                      data-caption="Peças de Rua: retas, curvas e cruzamentos">
+                <img src="assets/img/pecas-rua.svg" alt="" width="72" height="72" loading="lazy"><span>Rua</span>
+              </button>
+              <button class="thumb" type="button" aria-pressed="false"
+                      data-src="assets/img/pecas-parque.svg"
+                      data-alt="Peças de Parque, incluindo a Praça Central com chafariz"
+                      data-caption="Peças de Parque e a Praça Central">
+                <img src="assets/img/pecas-parque.svg" alt="" width="72" height="72" loading="lazy"><span>Parque</span>
+              </button>
+              <button class="thumb" type="button" aria-pressed="false"
+                      data-src="assets/img/pecas-predio.svg"
+                      data-alt="Peças de Prédio vistas de cima, combinadas com ruas e parques"
+                      data-caption="Peças de Prédio">
+                <img src="assets/img/pecas-predio.svg" alt="" width="72" height="72" loading="lazy"><span>Prédio</span>
+              </button>
+              <button class="thumb" type="button" aria-pressed="false"
+                      data-src="assets/img/pecas-ponte.svg"
+                      data-alt="Peças de Ponte, as coringas que ligam rua e parque"
+                      data-caption="Pontes: a coringa que liga qualquer terreno">
+                <img src="assets/img/pecas-ponte.svg" alt="" width="72" height="72" loading="lazy"><span>Ponte</span>
+              </button>
+              <button class="thumb" type="button" aria-pressed="false"
+                      data-src="assets/img/suportes.svg"
+                      data-alt="Suportes de madeira escondendo as peças da mão de cada jogador"
+                      data-caption="Suportes de madeira para esconder sua mão">
+                <img src="assets/img/suportes.svg" alt="" width="72" height="72" loading="lazy"><span>Suportes</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compra -->
+        <div class="hero-buy" id="comprar">
+          <fieldset class="edition-picker">
+            <legend class="edition-legend">Escolha sua edição</legend>
+
+            <label class="edition-card">
+              <input type="radio" name="edition" value="pocket" data-edition>
+              <span class="edition-radio" aria-hidden="true"></span>
+              <span class="edition-info">
+                <span class="edition-name">Edição Pocket</span>
+                <span class="edition-detail">20 peças</span>
+              </span>
+              <span class="edition-price">R$&nbsp;49,90</span>
+            </label>
+
+            <label class="edition-card">
+              <input type="radio" name="edition" value="completa" data-edition checked>
+              <span class="edition-badge">Mais vendida</span>
+              <span class="edition-radio" aria-hidden="true"></span>
+              <span class="edition-info">
+                <span class="edition-name">Edição Completa</span>
+                <span class="edition-detail">40 peças + Tabuleiro-Moldura 8x8</span>
+              </span>
+              <span class="edition-price">R$&nbsp;89,90</span>
+            </label>
+          </fieldset>
+
+          <div class="price-box" data-price-box>
+            <p class="price-line">
+              <span class="price-label" data-edition-name>Edição Completa</span>
+              <strong class="price-value" data-price>R$&nbsp;89,90</strong>
+            </p>
+            <p class="price-pix">ou <strong data-price-pix>R$&nbsp;85,41</strong> no Pix <span class="pill-off">-5%</span></p>
+            <p class="upsell" data-upsell hidden>
+              Por mais <strong data-upsell-diff>R$&nbsp;40,00</strong> você leva a Completa: o dobro de peças + Tabuleiro-Moldura 8x8.
+              <button type="button" class="link-btn" data-upsell-switch>Trocar para a Completa</button>
+            </p>
+            <p class="sr-only" aria-live="polite" data-price-announcer></p>
+          </div>
+
+          <button class="btn btn-primary btn-xl btn-block" type="button" data-buy data-hero-buy>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+            Comprar Agora
+          </button>
+
+          <p class="trust-line">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21 12 12 21 3 12Z"/><path d="m9 12 2 2 4-4"/></svg>5% de desconto no Pix</span>
+            <span class="tag-sep" aria-hidden="true">•</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>Envio rápido para todo o Brasil</span>
+          </p>
+
+          <form class="shipping" data-shipping novalidate>
+            <label class="shipping-label" for="cep">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+              Calcule frete e prazo
+            </label>
+            <div class="shipping-row">
+              <input class="input" id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code"
+                     placeholder="00000-000" maxlength="9" aria-describedby="cep-msg" data-cep>
+              <button class="btn btn-outline" type="submit" data-cep-submit>Calcular</button>
+            </div>
+            <p class="shipping-msg" id="cep-msg" data-cep-msg aria-live="polite"></p>
+            <div class="shipping-result" data-shipping-result aria-live="polite"></div>
+            <a class="shipping-help" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener">Não sei meu CEP</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== COMO JOGAR ============================== -->
+    <section class="section" id="como-jogar" aria-labelledby="como-jogar-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Regras em 2 minutos</p>
+          <h2 id="como-jogar-title">Como Jogar em 3 Passos</h2>
+          <p>Se você já encaixou duas pontas de dominó, já sabe começar. O resto se aprende na primeira partida.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step-card reveal">
+            <div class="step-art"><img src="assets/img/passo-1.svg" alt="" width="320" height="200" loading="lazy"></div>
+            <p class="step-num">Passo 1</p>
+            <h3>Construa a Cidade</h3>
+            <p>Encaixe peças de <strong>Rua</strong>, <strong>Parque</strong> e <strong>Prédio</strong> lado a lado combinando terrenos iguais em qualquer direção.</p>
+          </li>
+          <li class="step-card reveal">
+            <div class="step-art"><img src="assets/img/passo-2.svg" alt="" width="320" height="200" loading="lazy"></div>
+            <p class="step-num">Passo 2</p>
+            <h3>Feche Áreas e Descarte</h3>
+            <p>Cercou um parque ou fechou as pontas de uma rua? <strong>Descarte 1 peça extra</strong> da sua mão na hora.</p>
+          </li>
+          <li class="step-card reveal">
+            <div class="step-art"><img src="assets/img/passo-3.svg" alt="" width="320" height="200" loading="lazy"></div>
+            <p class="step-num">Passo 3</p>
+            <h3>Vire o Jogo com Ações</h3>
+            <p>Use <strong>Pontes</strong> como coringas, faça o oponente comprar com a <strong>Blitz (!)</strong> ou troque peças com o <strong>Guindaste</strong>.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== NA CAIXA ============================== -->
+    <section class="section section-alt" id="na-caixa" aria-labelledby="na-caixa-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Edição Completa</p>
+          <h2 id="na-caixa-title">O que Vem na Caixa</h2>
+          <p>Tudo o que você precisa para erguer sua cidade na mesa — e guardar de volta em segundos.</p>
+        </header>
+
+        <ul class="box-grid">
+          <li class="box-item reveal">
+            <div class="box-art"><img src="assets/img/comp-pecas.svg" alt="" width="400" height="300" loading="lazy"></div>
+            <div class="box-body">
+              <p class="box-qty">40</p>
+              <h3>Peças Cartonadas de alta espessura</h3>
+              <p>Incluindo Praça Central, peças duplas, Pontes, Blitz e Guindastes.</p>
+            </div>
+          </li>
+          <li class="box-item reveal">
+            <div class="box-art"><img src="assets/img/comp-tabuleiro.svg" alt="" width="400" height="300" loading="lazy"></div>
+            <div class="box-body">
+              <p class="box-qty">1</p>
+              <h3>Tabuleiro-Moldura (grade 8x8)</h3>
+              <p>Mantém a cidade alinhada na mesa, mesmo quando alguém esbarra.</p>
+            </div>
+          </li>
+          <li class="box-item reveal">
+            <div class="box-art"><img src="assets/img/comp-suportes.svg" alt="" width="400" height="300" loading="lazy"></div>
+            <div class="box-body">
+              <p class="box-qty">4</p>
+              <h3>Suportes de Madeira</h3>
+              <p>Para esconder as peças da sua mão dos outros jogadores.</p>
+            </div>
+          </li>
+          <li class="box-item reveal">
+            <div class="box-art"><img src="assets/img/comp-guia.svg" alt="" width="400" height="300" loading="lazy"></div>
+            <div class="box-body">
+              <p class="box-qty">1</p>
+              <h3>Guia Rápido de Regras</h3>
+              <p>Aprenda em 2 minutos e comece a jogar na sequência.</p>
+            </div>
+          </li>
+        </ul>
+
+        <!--
+          CONFIRMAR: o conteúdo da Edição Pocket abaixo (sem tabuleiro, sem suportes, com guia,
+          "ideal para 2") é uma suposição — o briefing só informa "20 peças".
+        -->
+        <div class="compare reveal">
+          <h3 class="compare-title">Pocket ou Completa?</h3>
+          <div class="table-wrap">
+            <table class="compare-table">
+              <caption class="sr-only">Comparativo entre a Edição Pocket e a Edição Completa</caption>
+              <thead>
+                <tr>
+                  <th scope="col"><span class="sr-only">Item</span></th>
+                  <th scope="col">Pocket</th>
+                  <th scope="col" class="is-featured">Completa <span class="mini-badge">Mais vendida</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Peças cartonadas</th>
+                  <td>20</td>
+                  <td class="is-featured"><strong>40</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tabuleiro-Moldura 8x8</th>
+                  <td><span class="no" aria-label="Não incluso">—</span></td>
+                  <td class="is-featured"><span class="yes" aria-label="Incluso">✓</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Suportes de madeira</th>
+                  <td><span class="no" aria-label="Não incluso">—</span></td>
+                  <td class="is-featured"><strong>4</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">Guia Rápido de Regras</th>
+                  <td><span class="yes" aria-label="Incluso">✓</span></td>
+                  <td class="is-featured"><span class="yes" aria-label="Incluso">✓</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Ideal para</th>
+                  <td>Viagens e partidas a 2</td>
+                  <td class="is-featured">2 a 4 jogadores em casa</td>
+                </tr>
+                <tr class="row-price">
+                  <th scope="row">Preço</th>
+                  <td><strong>R$&nbsp;49,90</strong><small>R$&nbsp;47,41 no Pix</small></td>
+                  <td class="is-featured"><strong>R$&nbsp;89,90</strong><small>R$&nbsp;85,41 no Pix</small></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-add="pocket">Adicionar</button></td>
+                  <td class="is-featured"><button class="btn btn-primary btn-sm" type="button" data-add="completa">Adicionar</button></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== AVALIAÇÕES ============================== -->
+    <!--
+      ATENÇÃO — CONTEÚDO PROVISÓRIO: a nota 4,9, as 128 avaliações e os depoimentos abaixo
+      são EXEMPLOS de layout. Publicar avaliações inventadas é publicidade enganosa
+      (CDC art. 37). Substitua por avaliações reais antes de ir ao ar.
+    -->
+    <section class="section" id="avaliacoes" aria-labelledby="avaliacoes-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Quem já jogou</p>
+          <h2 id="avaliacoes-title">Partidas rápidas, risadas longas</h2>
+        </header>
+
+        <div class="rating-summary reveal">
+          <p class="rating-score">4,9</p>
+          <div>
+            <div class="stars stars-lg" role="img" aria-label="Nota 4,9 de 5 estrelas" style="--rating: 4.9">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="rating-count">Nota geral de 5 estrelas baseada em <strong>128 avaliações</strong></p>
+          </div>
+        </div>
+
+        <ul class="reviews">
+          <li class="review-card reveal">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas" style="--rating: 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote>
+              <p>“Comprei para jogar com meus filhos de 9 e 12 anos e virou o jogo depois do jantar. Em uma rodada todo mundo entendeu, e a partida acaba em 15 minutos — sempre pedem a revanche.”</p>
+            </blockquote>
+            <footer class="review-author">
+              <span class="avatar" aria-hidden="true">FR</span>
+              <span><strong>Fernanda R.</strong><small>Campinas/SP · Edição Completa</small></span>
+            </footer>
+          </li>
+          <li class="review-card reveal">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas" style="--rating: 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote>
+              <p>“Jogamos a dois quase toda noite. Fechar um parque e descartar uma peça na hora muda tudo: até a última jogada ninguém sabe quem vai bater primeiro.”</p>
+            </blockquote>
+            <footer class="review-author">
+              <span class="avatar avatar-orange" aria-hidden="true">LM</span>
+              <span><strong>Lucas e Marina</strong><small>Belo Horizonte/MG · Edição Pocket</small></span>
+            </footer>
+          </li>
+          <li class="review-card reveal">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas" style="--rating: 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote>
+              <p>“Levei para o encontro com os amigos e jogamos seis partidas seguidas. A Blitz rendeu muita zoeira, e o tabuleiro-moldura deixa a cidade organizada mesmo com a mesa cheia.”</p>
+            </blockquote>
+            <footer class="review-author">
+              <span class="avatar avatar-slate" aria-hidden="true">RT</span>
+              <span><strong>Rafael T.</strong><small>Curitiba/PR · Edição Completa</small></span>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== FAQ ============================== -->
+    <section class="section section-alt" id="duvidas" aria-labelledby="duvidas-title">
+      <div class="container container-narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">Dúvidas</p>
+          <h2 id="duvidas-title">Perguntas Frequentes</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details class="faq-item" name="faq" open>
+            <summary>Preciso saber jogar dominó tradicional?</summary>
+            <div class="faq-body">
+              <p>Não. Se você já jogou, vai se sentir em casa: a ideia de encaixar pontas iguais é a mesma. Se nunca jogou, o Guia Rápido ensina tudo em 2 minutos e a primeira rodada já funciona como tutorial.</p>
+            </div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>Funciona bem em apenas 2 jogadores?</summary>
+            <div class="faq-body">
+              <p>Sim. A dois, a partida fica mais tática: você acompanha a mão do oponente diminuindo e escolhe a hora certa de usar a Blitz ou o Guindaste. Uma partida a dois dura cerca de 15 minutos.</p>
+            </div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>Qual a diferença entre a Edição Pocket e a Edição Completa?</summary>
+            <div class="faq-body">
+              <!-- CONFIRMAR: conteúdo exato da Pocket. -->
+              <p>A <strong>Pocket</strong> traz 20 peças e o Guia Rápido em uma caixa compacta — ótima para viagens e partidas a dois. A <strong>Completa</strong> tem 40 peças (com Praça Central, peças duplas, Pontes, Blitz e Guindastes), o Tabuleiro-Moldura 8x8 e 4 suportes de madeira, ideal para mesas de 3 ou 4 jogadores.</p>
+            </div>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>Qual o prazo de envio?</summary>
+            <div class="faq-body">
+              <!-- CONFIRMAR: prazo de postagem e transportadoras reais. -->
+              <p>Postamos em até 2 dias úteis após a confirmação do pagamento — no Pix, a confirmação é imediata. O prazo de entrega depende do seu CEP e da modalidade escolhida (Econômica ou Expressa). Use o <a href="#cep" data-focus-cep>simulador de frete</a> para ver o prazo para a sua casa.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CTA FINAL ============================== -->
+    <section class="final-cta" aria-labelledby="final-cta-title">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <h2 id="final-cta-title">Sua próxima noite de jogos começa com uma rua.</h2>
+          <p>Regras em 2 minutos, partidas de 15 a 20, revanche garantida.</p>
+        </div>
+        <a class="btn btn-primary btn-xl" href="#comprar" data-scroll-buy>Escolher minha edição</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== RODAPÉ ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#topo" class="logo logo-footer" aria-label="Dominópolis — voltar ao topo">
+          <svg class="logo-mark" viewBox="0 0 48 28" aria-hidden="true">
+            <rect x="1" y="1" width="46" height="26" rx="6" fill="#0F172A" stroke="#475569"/>
+            <rect x="4.5" y="4.5" width="18.5" height="19" rx="3" fill="#16A34A"/>
+            <circle cx="10.5" cy="11" r="3" fill="#86EFAC"/>
+            <circle cx="16.5" cy="17" r="3" fill="#86EFAC"/>
+            <rect x="25" y="4.5" width="18.5" height="19" rx="3" fill="#475569"/>
+            <line x1="25" y1="14" x2="43.5" y2="14" stroke="#F97316" stroke-width="2.4" stroke-dasharray="3.6 2.6"/>
+          </svg>
+          <span class="logo-text">DOMINÓPOLIS</span>
+        </a>
+        <p>O dominó clássico, reinventado em uma cidade viva.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="#como-jogar">Como Jogar</a>
+        <a href="#na-caixa">O que vem na caixa</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#duvidas">Dúvidas</a>
+        <!-- PREENCHER: páginas obrigatórias para e-commerce -->
+        <a href="#">Trocas e devoluções</a>
+        <a href="#">Política de privacidade</a>
+      </nav>
+      <div class="footer-legal">
+        <!-- PREENCHER: o Decreto 7.962/2013 exige razão social, CNPJ, endereço e contato visíveis. -->
+        <p>[Razão social] · CNPJ [00.000.000/0000-00]</p>
+        <p>[Endereço completo] · [e-mail de atendimento]</p>
+        <p>© 2026 Dominópolis. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================== BARRA FIXA MOBILE ============================== -->
+  <div class="mobile-bar" data-mobile-bar>
+    <div class="mobile-bar-info">
+      <span class="mobile-bar-name" data-edition-name>Edição Completa</span>
+      <span class="mobile-bar-price"><strong data-price>R$&nbsp;89,90</strong> <small>ou <span data-price-pix>R$&nbsp;85,41</span> no Pix</small></span>
+    </div>
+    <button class="btn btn-primary" type="button" data-buy>Comprar</button>
+  </div>
+
+  <!-- ============================== CARRINHO ============================== -->
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" id="carrinho" role="dialog" aria-modal="true" aria-labelledby="cart-title" data-cart tabindex="-1">
+    <header class="cart-head">
+      <h2 id="cart-title">Seu carrinho <span class="cart-head-count" data-cart-count-text></span></h2>
+      <button class="icon-btn" type="button" data-close-cart aria-label="Fechar carrinho">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="cart-body">
+      <ul class="cart-items" data-cart-items></ul>
+      <div class="cart-empty" data-cart-empty>
+        <img src="assets/img/passo-1.svg" alt="" width="200" height="125">
+        <p><strong>Seu carrinho está vazio.</strong><br>Que tal começar a construir sua cidade?</p>
+        <button class="btn btn-outline" type="button" data-close-cart>Continuar comprando</button>
+      </div>
+    </div>
+
+    <footer class="cart-foot" data-cart-foot>
+      <dl class="cart-totals">
+        <div><dt>Subtotal</dt><dd data-subtotal>R$&nbsp;0,00</dd></div>
+        <div class="cart-discount"><dt>Desconto Pix (5%)</dt><dd data-discount>− R$&nbsp;0,00</dd></div>
+        <div class="cart-total"><dt>Total no Pix</dt><dd data-total-pix>R$&nbsp;0,00</dd></div>
+      </dl>
+      <p class="cart-note">ou <span data-total-card>R$&nbsp;0,00</span> no cartão · Frete calculado na finalização</p>
+      <button class="btn btn-primary btn-xl btn-block" type="button" data-checkout>Finalizar pedido</button>
+      <p class="cart-status" data-checkout-status role="status"></p>
+      <p class="cart-secure">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        Pagamento seguro · Pix ou cartão
+      </p>
+    </footer>
+  </aside>
+
+  <template id="cart-item-tpl">
+    <li class="cart-item">
+      <img class="ci-img" src="" alt="" width="64" height="64">
+      <div class="ci-info">
+        <p class="ci-name"></p>
+        <p class="ci-detail"></p>
+        <div class="ci-controls">
+          <div class="qty" role="group">
+            <button type="button" class="qty-btn" data-act="dec">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+            </button>
+            <span class="qty-val" aria-live="polite"></span>
+            <button type="button" class="qty-btn" data-act="inc">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <button type="button" class="ci-remove" data-act="remove">Remover</button>
+        </div>
+      </div>
+      <div class="ci-price">
+        <strong class="ci-total"></strong>
+        <small class="ci-pix"></small>
+      </div>
+    </li>
+  </template>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
